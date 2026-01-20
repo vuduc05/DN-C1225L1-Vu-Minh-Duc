@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Carter | Front-end Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+</head>
+<body>
+    <!-- Header với navigation -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <span class="logo-icon">👨‍💻</span>
+                    <span class="logo-text">Alex Carter</span>
+                </a>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#gallery" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#features" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h5 class="hero-subtitle fade-in">Hello, I'm</h5>
+                <h1 class="hero-title fade-in">Alex Carter</h1>
+                <h2 class="hero-headline fade-in">Front-end <span class="highlight">Developer</span> & UI/UX <span class="highlight">Designer</span></h2>
+                <p class="hero-description fade-in">
+                    I create stunning, high-performance web experiences with modern technologies. With over 10 years of experience, I transform complex problems into elegant solutions.
+                </p>
+                <div class="hero-buttons fade-in">
+                    <a href="#gallery" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <div class="gradient-circle"></div>
+                    <div class="floating-shape shape-1"></div>
+                    <div class="floating-shape shape-2"></div>
+                    <div class="floating-shape shape-3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                <p class="section-subtitle">Passionate developer with a focus on creating exceptional user experiences</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image reveal">
+                    <div class="image-frame">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <h3>Building digital experiences that make a difference</h3>
+                    <p>I'm a senior front-end developer with over a decade of experience crafting beautiful, functional, and accessible web applications. My expertise spans modern JavaScript, CSS, and responsive design principles.</p>
+                    <p>I believe in writing clean, maintainable code and creating interfaces that are not only visually appealing but also intuitive and user-friendly.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="120">0</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="10">0</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="45">0</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section-padding" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="highlight">Services</span></h2>
+                <p class="section-subtitle">Comprehensive web development and design solutions</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="service-title">Front-end Development</h3>
+                    <p class="service-description">Custom, responsive websites built with vanilla JavaScript, HTML5, and CSS3. Performance-optimized and cross-browser compatible.</p>
+                </div>
+                
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="service-title">UI/UX Design</h3>
+                    <p class="service-description">User-centered design that balances aesthetics with functionality. Wireframing, prototyping, and design system creation.</p>
+                </div>
+                
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="service-title">Responsive Design</h3>
+                    <p class="service-description">Creating websites that look and function perfectly on all devices, from desktop to mobile.</p>
+                </div>
+                
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="service-title">Web Performance</h3>
+                    <p class="service-description">Optimizing websites for speed, SEO, and accessibility to ensure the best user experience possible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section-padding" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Project <span class="highlight">Gallery</span></h2>
+                <p class="section-subtitle">A selection of my recent work and personal projects</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item reveal">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="E-commerce Dashboard">
+                        <div class="gallery-overlay">
+                            <h3>E-commerce Dashboard</h3>
+                            <p>Modern admin dashboard with interactive charts and analytics</p>
+                            <a href="#" class="gallery-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item reveal">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Financial Analytics Platform">
+                        <div class="gallery-overlay">
+                            <h3>Financial Analytics</h3>
+                            <p>Real-time data visualization and reporting platform</p>
+                            <a href="#" class="gallery-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item reveal">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Travel App UI">
+                        <div class="gallery-overlay">
+                            <h3>Travel App UI</h3>
+                            <p>Mobile-first travel application with booking functionality</p>
+                            <a href="#" class="gallery-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item reveal">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Health & Fitness App">
+                        <div class="gallery-overlay">
+                            <h3>Health & Fitness App</h3>
+                            <p>Workout tracking and nutrition planning application</p>
+                            <a href="#" class="gallery-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features/Skills Section -->
+    <section class="features section-padding" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical <span class="highlight">Skills</span></h2>
+                <p class="section-subtitle">Core technologies and tools I specialize in</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-item reveal">
+                    <div class="feature-header">
+                        <div class="feature-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3 class="feature-title">HTML5 & Semantic Markup</h3>
+                    </div>
+                    <p class="feature-description">Clean, accessible, and SEO-friendly HTML structure following best practices and W3C standards.</p>
+                </div>
+                
+                <div class="feature-item reveal">
+                    <div class="feature-header">
+                        <div class="feature-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <h3 class="feature-title">CSS3 & Modern Layouts</h3>
+                    </div>
+                    <p class="feature-description">Expert in Flexbox, Grid, animations, and responsive design techniques for pixel-perfect interfaces.</p>
+                </div>
+                
+                <div class="feature-item reveal">
+                    <div class="feature-header">
+                        <div class="feature-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <h3 class="feature-title">JavaScript (ES6+)</h3>
+                    </div>
+                    <p class="feature-description">Modern JavaScript for interactive web applications, animations, and performance optimization.</p>
+                </div>
+                
+                <div class="feature-item reveal">
+                    <div class="feature-header">
+                        <div class="feature-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3 class="feature-title">UI/UX Design Principles</h3>
+                    </div>
+                    <p class="feature-description">User-centered design approach focused on usability, accessibility, and visual hierarchy.</p>
+                </div>
+            </div>
+            
+            <div class="skills-chart">
+                <div class="skill reveal">
+                    <div class="skill-info">
+                        <span class="skill-name">HTML/CSS</span>
+                        <span class="skill-percent" data-percent="98">0%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-percent="98"></div>
+                    </div>
+                </div>
+                
+                <div class="skill reveal">
+                    <div class="skill-info">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-percent" data-percent="95">0%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-percent="95"></div>
+                    </div>
+                </div>
+                
+                <div class="skill reveal">
+                    <div class="skill-info">
+                        <span class="skill-name">UI/UX Design</span>
+                        <span class="skill-percent" data-percent="92">0%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-percent="92"></div>
+                    </div>
+                </div>
+                
+                <div class="skill reveal">
+                    <div class="skill-info">
+                        <span class="skill-name">Performance Optimization</span>
+                        <span class="skill-percent" data-percent="90">0%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-percent="90"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-icon">👨‍💻</span>
+                        <span class="logo-text">Alex Carter</span>
+                    </a>
+                    <p class="footer-description">Senior Front-end Developer & UI/UX Designer creating exceptional digital experiences with modern web technologies.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-codepen"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Projects</a></li>
+                        <li><a href="#features">Skills</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 class="footer-title">Get In Touch</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> hello@alexcarter.dev</li>
+                        <li><i class="fas fa-phone"></i> +1 (123) 456-7890</li>
+                        <li><i class="fas fa-map-marker-alt"></i> San Francisco, CA</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2023</span> Alex Carter. All rights reserved.</p>
+                <p>Designed & coded with ❤️ using vanilla HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" id="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
