@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <label for="math">Nhập điểm toán</label><input id="math"><br>
+   <label for="van">Nhập điểm văn</label><input id="van"><br>
+   <label for="eng">Nhập điểm anh</label><input id="eng"><br>
+   <button id="avg">Tính điểm trung bình</button>
+</body>
+<script>
+    document.getElementById("avg").addEventListener("click", function(){
+        let math = +document.getElementById("math").value
+        let van = +document.getElementById("van").value
+        let eng = +document.getElementById("eng").value
+        alert(math)
+        alert(van)
+        alert(eng)
+        let avg = (math + van + eng)/3;
+        alert(avg)
+    })
+</script>
+</html>

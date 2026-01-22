@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tiền tệ</title>
+</head>
+<body>
+    <h2>Ứng dụng chuyển đổi tiền tệ</h2>
+
+    <form>
+        <label>Số tiền:</label>
+        <input type="number" id="amount" placeholder="Nhập số tiền">
+
+        <br><br>
+
+        <label>Từ:</label>
+        <select id="fromCurrency">
+            <option value="VND">VND</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+        </select>
+
+        <label>Sang:</label>
+        <select id="toCurrency">
+            <option value="VND">VND</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+        </select>
+
+        <br><br>
+
+        <button type="button" onclick="convertMoney()">Convert</button>
+    </form>
+
+    <h3 id="result"></h3>
+
+    <script src="script.js"></script>
+</body>
+</html>
