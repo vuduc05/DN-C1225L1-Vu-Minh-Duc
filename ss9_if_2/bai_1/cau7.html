@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let minutes = parseInt(prompt("Nhập số phút gọi:"));
+let cost = 0;
+
+if (minutes <= 50) {
+    cost = minutes * 600;
+} else if (minutes <= 150) {
+    cost = 50 * 600 + (minutes - 50) * 400;
+} else {
+    cost = 50 * 600 + 100 * 400 + (minutes - 150) * 200;
+}
+
+alert("Cước điện thoại là: " + cost + " VND");
+</script>
+
+</body>
+</html>

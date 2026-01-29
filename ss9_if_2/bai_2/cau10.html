@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let kwh = parseInt(prompt("Nhập số điện tiêu thụ:"));
+let money = 0;
+
+if (kwh <= 50) {
+    money = kwh * 1678;
+} else if (kwh <= 100) {
+    money = 50 * 1678 + (kwh - 50) * 1734;
+} else {
+    money = 50 * 1678 + 50 * 1734 + (kwh - 100) * 2014;
+}
+
+alert("Tiền điện phải trả: " + money + " VND");
+</script>
+
+</body>
+</html>

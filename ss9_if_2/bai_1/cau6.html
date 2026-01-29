@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let sales = parseFloat(prompt("Nhập doanh số bán hàng:"));
+let commission = 0;
+
+if (sales >= 100000000) {
+    commission = sales * 0.1;
+} else if (sales >= 50000000) {
+    commission = sales * 0.07;
+} else {
+    commission = sales * 0.05;
+}
+
+alert("Hoa hồng nhận được: " + commission + " VND");
+</script>
+
+</body>
+</html>

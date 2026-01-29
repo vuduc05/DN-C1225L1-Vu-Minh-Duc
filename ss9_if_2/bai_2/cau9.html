@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let a = parseFloat(prompt("Nhập cạnh a:"));
+let b = parseFloat(prompt("Nhập cạnh b:"));
+let c = parseFloat(prompt("Nhập cạnh c:"));
+
+if (a > 0 && b > 0 && c > 0 &&
+    a + b > c &&
+    a + c > b &&
+    b + c > a) {
+    alert("a, b, c là 3 cạnh của tam giác");
+} else {
+    alert("Không phải là tam giác");
+}
+</script>
+
+</body>
+</html>
