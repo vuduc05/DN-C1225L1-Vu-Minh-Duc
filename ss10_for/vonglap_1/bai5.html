@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tổng Fibonacci</title>
+</head>
+<body>
+
+<h2>Tổng 20 số Fibonacci đầu tiên</h2>
+<p id="result"></p>
+
+<script>
+    let a = 0;
+let b = 1;
+let sum = 0;
+
+for (let i = 1; i <= 20; i++) {
+    sum += a;
+
+    let temp = a + b;
+    a = b;
+    b = temp;
+}
+
+document.getElementById("result").innerHTML =
+    "Tổng của 20 số Fibonacci đầu tiên là: " + sum;
+
+</script>
+</body>
+</html>

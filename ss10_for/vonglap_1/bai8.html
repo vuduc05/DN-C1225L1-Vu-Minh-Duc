@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Game đoán số nâng cấp</title>
+</head>
+<body>
+
+<h2>🎮 Game đoán số</h2>
+<button onclick="playGame()">Chơi</button>
+
+<script>
+function playGame() {
+    // Nhập khoảng đoán
+    let min = Number(prompt("Nhập số nhỏ nhất:"));
+    let max = Number(prompt("Nhập số lớn nhất:"));
+
+    // Sinh số ngẫu nhiên trong khoảng
+    let secretNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+
+    let guess;
+    let isWin = false;
+
+    // Người chơi chỉ được đoán tối đa 3 lần
+    for (let i = 1; i <= 3; i++) {
+        guess = Number(prompt("Lần đoán " + i + ": Nhập số bạn đoán"));
+
+        if (guess === secretNumber) {
+            alert("🎉 Chúc mừng! Bạn đã đoán đúng số " + secretNumber);
+            isWin = true;
+            break;
+        } else if (guess > secretNumber) {
+            alert("Số bạn đoán LỚN hơn số cần tìm");
+        } else {
+            alert("Số bạn đoán NHỎ hơn số cần tìm");
+        }
+    }
+
+    if (!isWin) {
+        alert("😢 Bạn đã thua! Số đúng là: " + secretNumber);
+    }
+}
+</script>
+
+</body>
+</html>

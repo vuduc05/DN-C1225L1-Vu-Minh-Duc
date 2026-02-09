@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giai thừa</title>
+</head>
+<body>
+
+<h2>Tính giai thừa của một số nguyên dương</h2>
+
+<script>
+    let n = Number(prompt("Nhập một số nguyên dương:"));
+    let factorial = 1;
+
+    if (n <= 0) {
+        alert("Vui lòng nhập một số nguyên dương!");
+    } else {
+        for (let i = 1; i <= n; i++) {
+            factorial *= i;
+        }
+
+        alert(n + "! = " + factorial);
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>In hình chữ nhật</title>
+</head>
+<body>
+
+<h2>In hình chữ nhật rỗng</h2>
+
+<script>
+    let height = 7; // số dòng
+    let width = 25; // số cột
+
+    document.write("<pre>");
+
+    for (let i = 1; i <= height; i++) {
+        for (let j = 1; j <= width; j++) {
+            if (i === 1 || i === height || j === 1 || j === width) {
+                document.write("*");
+            } else {
+                document.write(" ");
+            }
+        }
+        document.write("\n");
+    }
+
+    document.write("</pre>");
+</script>
+
+</body>
+</html>

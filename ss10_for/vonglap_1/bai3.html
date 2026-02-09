@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Dãy Fibonacci</title>
+</head>
+<body>
+
+<h2>20 số Fibonacci đầu tiên</h2>
+<p id="result"></p>
+
+<script>
+    let a = 0;
+let b = 1;
+let result = "";
+
+for (let i = 1; i <= 20; i++) {
+    result += a + " ";
+    
+    let temp = a + b;
+    a = b;
+    b = temp;
+}
+
+document.getElementById("result").innerHTML = result;
+
+</script>
+</body>
+</html>

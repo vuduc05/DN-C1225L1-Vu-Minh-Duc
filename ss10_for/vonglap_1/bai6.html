@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tổng số chia hết cho 7</title>
+</head>
+<body>
+
+<h2>Tổng 30 số chia hết cho 7 đầu tiên</h2>
+<p id="result"></p>
+
+<script >let count = 0; // đếm số lượng số chia hết cho 7
+let sum = 0;
+let i = 0;
+
+while (count < 30) {
+    if (i % 7 === 0) {
+        sum += i;
+        count++;
+    }
+    i++;
+}
+
+document.getElementById("result").innerHTML =
+    "Tổng của 30 số chia hết cho 7 đầu tiên là: " + sum;
+</script>
+</body>
+</html>

@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cửa hàng điện thoại chính hãng - Giá tốt nhất thị trường - Bảo hành uy tín">
+    <meta name="keywords" content="điện thoại, smartphone, iPhone, Samsung, OPPO, Xiaomi">
+    <title>PhoneHub - Điện Thoại Chính Hãng Giá Tốt</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Header với sticky navigation -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <div class="nav-brand">
+                <svg class="logo-icon" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="15" y="5" width="20" height="35" rx="3" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="25" cy="37" r="1.5" fill="currentColor"/>
+                    <line x1="20" y1="10" x2="30" y2="10" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+                <span class="logo-text">PhoneHub</span>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Trang chủ</a></li>
+                <li><a href="#products" class="nav-link">Sản phẩm</a></li>
+                <li><a href="#features" class="nav-link">Ưu đãi</a></li>
+                <li><a href="#about" class="nav-link">Về chúng tôi</a></li>
+                <li><a href="#contact" class="nav-link">Liên hệ</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="search-btn" aria-label="Tìm kiếm">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+                <button class="cart-btn" aria-label="Giỏ hàng">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="login-btn" id="loginBtn" aria-label="Đăng nhập">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span>Đăng nhập</span>
+                </button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section - Ấn tượng ngay từ cái nhìn đầu tiên -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="hero-label fade-in">Mới ra mắt 2024</span>
+                    <h1 class="hero-title fade-in-up">
+                        Trải nghiệm<br>
+                        <span class="gradient-text">Công nghệ</span><br>
+                        Tương lai
+                    </h1>
+                    <p class="hero-description fade-in-up delay-1">
+                        Khám phá bộ sưu tập điện thoại thông minh mới nhất với công nghệ đột phá, 
+                        thiết kế tinh tế và giá cả cạnh tranh nhất thị trường.
+                    </p>
+                    <div class="hero-buttons fade-in-up delay-2">
+                        <a href="#products" class="btn btn-primary">
+                            Khám phá ngay
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="#features" class="btn btn-secondary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                            Xem video
+                        </a>
+                    </div>
+                    
+                    <!-- Stats -->
+                    <div class="hero-stats fade-in-up delay-3">
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="50000">0</h3>
+                            <p class="stat-label">Khách hàng</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="1000">0</h3>
+                            <p class="stat-label">Sản phẩm</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="99">0</h3>
+                            <p class="stat-label">% Hài lòng</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image fade-in-right">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="screen-content"></div>
+                        </div>
+                    </div>
+                    <div class="floating-card card-1">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                        <div>
+                            <p class="card-label">Giảm đến</p>
+                            <p class="card-value">30%</p>
+                        </div>
+                    </div>
+                    <div class="floating-card card-2">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                        <div>
+                            <p class="card-label">Đánh giá</p>
+                            <p class="card-value">4.9★</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Cuộn xuống</p>
+        </div>
+    </section>
+
+    <!-- Products Section - Gallery với hover effect -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Sản phẩm nổi bật</span>
+                <h2 class="section-title">Bộ sưu tập <span class="gradient-text">Hot nhất</span></h2>
+                <p class="section-description">Những sản phẩm được yêu thích nhất với công nghệ tiên tiến và thiết kế đẳng cấp</p>
+            </div>
+            
+            <!-- Category Filter -->
+            <div class="product-filters">
+                <button class="filter-btn active" data-filter="all">Tất cả</button>
+                <button class="filter-btn" data-filter="iphone">iPhone</button>
+                <button class="filter-btn" data-filter="samsung">Samsung</button>
+                <button class="filter-btn" data-filter="xiaomi">Xiaomi</button>
+                <button class="filter-btn" data-filter="oppo">OPPO</button>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="iphone">
+                    <div class="product-badge">-20%</div>
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <svg viewBox="0 0 200 300" fill="none">
+                                <rect x="20" y="10" width="160" height="270" rx="20" fill="#1a1a1a"/>
+                                <rect x="30" y="20" width="140" height="250" rx="15" fill="#0a0a0a"/>
+                                <circle cx="100" cy="30" r="3" fill="#333"/>
+                                <rect x="60" y="26" width="50" height="8" rx="4" fill="#333"/>
+                            </svg>
+                        </div>
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Yêu thích">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                </svg>
+                            </button>
+                            <button class="action-btn" aria-label="Xem nhanh">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">iPhone 15 Pro Max</h3>
+                        <div class="product-rating">
+                            <div class="stars">★★★★★</div>
+                            <span class="rating-count">(256)</span>
+                        </div>
+                        <p class="product-desc">Chip A17 Pro • Camera 48MP • Titan</p>
+                        <div class="product-price">
+                            <span class="price-old">32.990.000₫</span>
+                            <span class="price-new">26.390.000₫</span>
+                        </div>
+                        <button class="btn-add-cart">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-category="samsung">
+                    <div class="product-badge new">Mới</div>
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <svg viewBox="0 0 200 300" fill="none">
+                                <rect x="20" y="10" width="160" height="270" rx="20" fill="#2a2a3a"/>
+                                <rect x="30" y="20" width="140" height="250" rx="15" fill="#1a1a2a"/>
+                                <circle cx="100" cy="30" r="3" fill="#444"/>
+                                <rect x="60" y="26" width="50" height="8" rx="4" fill="#444"/>
+                            </svg>
+                        </div>
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Yêu thích">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                </svg>
+                            </button>
+                            <button class="action-btn" aria-label="Xem nhanh">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Samsung Galaxy S24 Ultra</h3>
+                        <div class="product-rating">
+                            <div class="stars">★★★★★</div>
+                            <span class="rating-count">(189)</span>
+                        </div>
+                        <p class="product-desc">Snapdragon 8 Gen 3 • S Pen • AI</p>
+                        <div class="product-price">
+                            <span class="price-new">29.990.000₫</span>
+                        </div>
+                        <button class="btn-add-cart">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-category="xiaomi">
+                    <div class="product-badge">-15%</div>
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <svg viewBox="0 0 200 300" fill="none">
+                                <rect x="20" y="10" width="160" height="270" rx="20" fill="#3a2a2a"/>
+                                <rect x="30" y="20" width="140" height="250" rx="15" fill="#2a1a1a"/>
+                                <circle cx="100" cy="30" r="3" fill="#555"/>
+                                <rect x="60" y="26" width="50" height="8" rx="4" fill="#555"/>
+                            </svg>
+                        </div>
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Yêu thích">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                </svg>
+                            </button>
+                            <button class="action-btn" aria-label="Xem nhanh">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Xiaomi 14 Ultra</h3>
+                        <div class="product-rating">
+                            <div class="stars">★★★★☆</div>
+                            <span class="rating-count">(142)</span>
+                        </div>
+                        <p class="product-desc">Leica Camera • Snapdragon 8 Gen 3</p>
+                        <div class="product-price">
+                            <span class="price-old">25.990.000₫</span>
+                            <span class="price-new">22.090.000₫</span>
+                        </div>
+                        <button class="btn-add-cart">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-category="oppo">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <svg viewBox="0 0 200 300" fill="none">
+                                <rect x="20" y="10" width="160" height="270" rx="20" fill="#2a3a2a"/>
+                                <rect x="30" y="20" width="140" height="250" rx="15" fill="#1a2a1a"/>
+                                <circle cx="100" cy="30" r="3" fill="#454"/>
+                                <rect x="60" y="26" width="50" height="8" rx="4" fill="#454"/>
+                            </svg>
+                        </div>
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Yêu thích">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                </svg>
+                            </button>
+                            <button class="action-btn" aria-label="Xem nhanh">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">OPPO Find X7 Ultra</h3>
+                        <div class="product-rating">
+                            <div class="stars">★★★★★</div>
+                            <span class="rating-count">(98)</span>
+                        </div>
+                        <p class="product-desc">Hasselblad • Dimensity 9300</p>
+                        <div class="product-price">
+                            <span class="price-new">24.990.000₫</span>
+                        </div>
+                        <button class="btn-add-cart">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-category="samsung">
+                    <div class="product-badge">-25%</div>
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <svg viewBox="0 0 200 300" fill="none">
+                                <rect x="20" y="10" width="160" height="270" rx="20" fill="#2a2a4a"/>
+                                <rect x="30" y="20" width="140" height="250" rx="15" fill="#1a1a3a"/>
+                                <circle cx="100" cy="30" r="3" fill="#545"/>
+                                <rect x="60" y="26" width="50" height="8" rx="4" fill="#545"/>
+                            </svg>
+                        </div>
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Yêu thích">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                </svg>
+                            </button>
+                            <button class="action-btn" aria-label="Xem nhanh">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Samsung Galaxy Z Fold 6</h3>
+                        <div class="product-rating">
+                            <div class="stars">★★★★★</div>
+                            <span class="rating-count">(167)</span>
+                        </div>
+                        <p class="product-desc">Màn hình gập • AI • Snapdragon 8 Gen 3</p>
+                        <div class="product-price">
+                            <span class="price-old">43.990.000₫</span>
+                            <span class="price-new">32.990.000₫</span>
+                        </div>
+                        <button class="btn-add-cart">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" data-category="iphone">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <svg viewBox="0 0 200 300" fill="none">
+                                <rect x="20" y="10" width="160" height="270" rx="20" fill="#4a2a2a"/>
+                                <rect x="30" y="20" width="140" height="250" rx="15" fill="#3a1a1a"/>
+                                <circle cx="100" cy="30" r="3" fill="#655"/>
+                                <rect x="60" y="26" width="50" height="8" rx="4" fill="#655"/>
+                            </svg>
+                        </div>
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Yêu thích">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                </svg>
+                            </button>
+                            <button class="action-btn" aria-label="Xem nhanh">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">iPhone 15 Plus</h3>
+                        <div class="product-rating">
+                            <div class="stars">★★★★★</div>
+                            <span class="rating-count">(201)</span>
+                        </div>
+                        <p class="product-desc">A16 Bionic • Camera 48MP • 6.7"</p>
+                        <div class="product-price">
+                            <span class="price-new">24.990.000₫</span>
+                        </div>
+                        <button class="btn-add-cart">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            Thêm vào giỏ
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section - Scroll reveal animation -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Ưu đãi đặc biệt</span>
+                <h2 class="section-title">Tại sao chọn <span class="gradient-text">PhoneHub?</span></h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Chính hãng 100%</h3>
+                    <p class="feature-description">Cam kết sản phẩm chính hãng, có tem nhập khẩu và bảo hành toàn quốc</p>
+                </div>
+                
+                <div class="feature-card reveal">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Giao hàng nhanh</h3>
+                    <p class="feature-description">Giao hàng trong 2 giờ nội thành, miễn phí ship toàn quốc</p>
+                </div>
+                
+                <div class="feature-card reveal">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2"/>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Bảo hành uy tín</h3>
+                    <p class="feature-description">Bảo hành 12 tháng, đổi mới trong 30 ngày nếu có lỗi</p>
+                </div>
+                
+                <div class="feature-card reveal">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Giá tốt nhất</h3>
+                    <p class="feature-description">Cam kết giá tốt nhất thị trường, hoàn tiền nếu tìm được giá rẻ hơn</p>
+                </div>
+                
+                <div class="feature-card reveal">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Trả góp 0%</h3>
+                    <p class="feature-description">Hỗ trợ trả góp 0% lãi suất, duyệt nhanh chỉ 15 phút</p>
+                </div>
+                
+                <div class="feature-card reveal">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Tư vấn 24/7</h3>
+                    <p class="feature-description">Đội ngũ tư vấn chuyên nghiệp, hỗ trợ 24/7 qua hotline và chat</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image reveal">
+                    <div class="about-image-wrapper">
+                        <div class="image-placeholder">
+                            <svg viewBox="0 0 400 500" fill="none">
+                                <rect width="400" height="500" fill="url(#aboutGradient)"/>
+                                <circle cx="200" cy="150" r="60" fill="rgba(255,255,255,0.1)"/>
+                                <rect x="100" y="250" width="200" height="8" rx="4" fill="rgba(255,255,255,0.1)"/>
+                                <rect x="80" y="280" width="240" height="8" rx="4" fill="rgba(255,255,255,0.08)"/>
+                                <rect x="120" y="310" width="160" height="8" rx="4" fill="rgba(255,255,255,0.06)"/>
+                                <defs>
+                                    <linearGradient id="aboutGradient" x1="0" y1="0" x2="400" y2="500">
+                                        <stop offset="0%" stop-color="#667eea"/>
+                                        <stop offset="100%" stop-color="#764ba2"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="about-stats-card">
+                        <h4>10+</h4>
+                        <p>Năm kinh nghiệm</p>
+                    </div>
+                </div>
+                
+                <div class="about-text reveal">
+                    <span class="section-label">Về chúng tôi</span>
+                    <h2 class="section-title">Đối tác tin cậy của <span class="gradient-text">hàng triệu</span> khách hàng</h2>
+                    <p class="about-description">
+                        PhoneHub là chuỗi cửa hàng điện thoại uy tín hàng đầu Việt Nam với hơn 10 năm kinh nghiệm. 
+                        Chúng tôi tự hào là đơn vị phân phối chính thức của Apple, Samsung, Xiaomi, OPPO và nhiều thương hiệu lớn khác.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            <div>
+                                <h4>Sản phẩm chính hãng</h4>
+                                <p>100% nhập khẩu chính hãng có tem FPT, VinPro</p>
+                            </div>
+                        </div>
+                        <div class="about-feature-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            <div>
+                                <h4>Bảo hành toàn diện</h4>
+                                <p>Bảo hành 12 tháng, đổi mới trong 30 ngày</p>
+                            </div>
+                        </div>
+                        <div class="about-feature-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            <div>
+                                <h4>Hệ thống rộng khắp</h4>
+                                <p>Hơn 100 cửa hàng trên toàn quốc</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Liên hệ ngay</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Liên hệ</span>
+                <h2 class="section-title">Hãy để chúng tôi <span class="gradient-text">tư vấn</span> cho bạn</h2>
+            </div>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info reveal">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <h3>Địa chỉ cửa hàng</h3>
+                        <p>123 Nguyễn Huệ, Quận 1<br>TP. Hồ Chí Minh, Việt Nam</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <h3>Số điện thoại</h3>
+                        <p>Hotline: 1900 xxxx<br>Tư vấn: 0901 234 567</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <h3>Email</h3>
+                        <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="384b4d4848574a4c78485057565d504d5a164e56">[email&#160;protected]</a><br><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="acdfcdc0c9dfecdcc4c3c2c9c4d9ce82dac2">[email&#160;protected]</a></p>
+                    </div>
+                </div>
+                
+                <form class="contact-form reveal">
+                    <div class="form-group">
+                        <input type="text" placeholder="Họ và tên *" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email *" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Số điện thoại *" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Nội dung tin nhắn *" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        Gửi tin nhắn
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"/>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-brand">
+                        <svg class="logo-icon" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="15" y="5" width="20" height="35" rx="3" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="25" cy="37" r="1.5" fill="currentColor"/>
+                            <line x1="20" y1="10" x2="30" y2="10" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                        <span class="logo-text">PhoneHub</span>
+                    </div>
+                    <p class="footer-description">
+                        Cửa hàng điện thoại chính hãng uy tín #1 Việt Nam. 
+                        Cam kết sản phẩm chất lượng, giá cả hợp lý.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="TikTok">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Sản phẩm</h3>
+                    <ul class="footer-links">
+                        <li><a href="#products">iPhone</a></li>
+                        <li><a href="#products">Samsung</a></li>
+                        <li><a href="#products">Xiaomi</a></li>
+                        <li><a href="#products">OPPO</a></li>
+                        <li><a href="#products">Phụ kiện</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Dịch vụ</h3>
+                    <ul class="footer-links">
+                        <li><a href="#features">Trả góp 0%</a></li>
+                        <li><a href="#features">Bảo hành</a></li>
+                        <li><a href="#features">Thu cũ đổi mới</a></li>
+                        <li><a href="#about">Về chúng tôi</a></li>
+                        <li><a href="#contact">Liên hệ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="newsletter-text">Đăng ký nhận thông tin ưu đãi mới nhất</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email của bạn" required>
+                        <button type="submit" aria-label="Đăng ký">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"/>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 PhoneHub. Bảo lưu mọi quyền.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Chính sách bảo mật</a>
+                    <a href="#">Điều khoản sử dụng</a>
+                    <a href="#">Chính sách đổi trả</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="backToTop" aria-label="Về đầu trang    <!-- Auth Modal - Đăng nhập/Đăng ký -->
+    <div class="auth-modal" id="authModal">
+        <div class="auth-overlay" id="authOverlay"></div>
+        <div class="auth-container">
+            <button class="auth-close" id="authClose" aria-label="Đóng">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            
+            <!-- Login Form -->
+            <div class="auth-form" id="loginForm">
+                <div class="auth-header">
+                    <h2>Đăng nhập</h2>
+                    <p>Chào mừng bạn quay trở lại!</p>
+                </div>
+                
+                <form id="loginFormElement">
+                    <div class="input-group">
+                        <label for="loginEmail">Email hoặc Số điện thoại</label>
+                        <div class="input-with-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <input type="text" id="loginEmail" placeholder="email@example.com" required>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="loginPassword">Mật khẩu</label>
+                        <div class="input-with-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            <input type="password" id="loginPassword" placeholder="••••••••" required>
+                            <button type="button" class="toggle-password" data-target="loginPassword">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="rememberMe">
+                            <span>Ghi nhớ đăng nhập</span>
+                        </label>
+                        <a href="#" class="forgot-password">Quên mật khẩu?</a>
+                    </div>
+                    
+                    <button type="submit" class="btn-auth btn-auth-primary">
+                        Đăng nhập
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </form>
+                
+                <div class="auth-divider">
+                    <span>Hoặc đăng nhập bằng</span>
+                </div>
+                
+                <div class="social-login">
+                    <button class="btn-social btn-google">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                        </svg>
+                        Google
+                    </button>
+                    <button class="btn-social btn-facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" fill="#1877F2"/>
+                        </svg>
+                        Facebook
+                    </button>
+                </div>
+                
+                <div class="auth-footer">
+                    <p>Chưa có tài khoản? <a href="#" class="switch-form" data-target="register">Đăng ký ngay</a></p>
+                </div>
+            </div>
+            
+            <!-- Register Form -->
+            <div class="auth-form" id="registerForm" style="display: none;">
+                <div class="auth-header">
+                    <h2>Đăng ký tài khoản</h2>
+                    <p>Tạo tài khoản để nhận ưu đãi độc quyền</p>
+                </div>
+                
+                <form id="registerFormElement">
+                    <div class="input-group">
+                        <label for="registerName">Họ và tên</label>
+                        <div class="input-with-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            <input type="text" id="registerName" placeholder="Nguyễn Văn A" required>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="registerEmail">Email</label>
+                        <div class="input-with-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <input type="email" id="registerEmail" placeholder="email@example.com" required>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="registerPhone">Số điện thoại</label>
+                        <div class="input-with-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <input type="tel" id="registerPhone" placeholder="0901 234 567" required>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="registerPassword">Mật khẩu</label>
+                        <div class="input-with-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            <input type="password" id="registerPassword" placeholder="••••••••" required minlength="6">
+                            <button type="button" class="toggle-password" data-target="registerPassword">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                            </button>
+                        </div>
+                        <small class="input-hint">Tối thiểu 6 ký tự</small>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="registerConfirmPassword">Xác nhận mật khẩu</label>
+                        <div class="input-with-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            <input type="password" id="registerConfirmPassword" placeholder="••••••••" required>
+                            <button type="button" class="toggle-password" data-target="registerConfirmPassword">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="agreeTerms" required>
+                            <span>Tôi đồng ý với <a href="#">Điều khoản dịch vụ</a> và <a href="#">Chính sách bảo mật</a></span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn-auth btn-auth-primary">
+                        Đăng ký
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </form>
+                
+                <div class="auth-divider">
+                    <span>Hoặc đăng ký bằng</span>
+                </div>
+                
+                <div class="social-login">
+                    <button class="btn-social btn-google">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                        </svg>
+                        Google
+                    </button>
+                    <button class="btn-social btn-facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" fill="#1877F2"/>
+                        </svg>
+                        Facebook
+                    </button>
+                </div>
+                
+                <div class="auth-footer">
+                    <p>Đã có tài khoản? <a href="#" class="switch-form" data-target="login">Đăng nhập</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Back to top button -->
+    <button class="back-to-top" id="backToTop" aria-label="Về đầu trang
